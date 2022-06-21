@@ -29,6 +29,8 @@ public class ChooseModeView extends TestLibrary {
     private final String XPATH_TIMELAPSE = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[9]/android.widget.Button";
     private final String BTN_TINY_PLANET = "TINY_PLANET";
     private final String XPATH_TINY_PLANET = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[11]/android.widget.Button";
+    private final String BTN_CLONE_TRAIL = "CLONE_TRAIL";
+    private final String XPATH_CLONE_TRAIL = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[14]/android.widget.Button";
 
     public AndroidElement getViewElement(MobileDriver<AndroidElement> driver, String elementText) {
 
@@ -63,6 +65,9 @@ public class ChooseModeView extends TestLibrary {
                 break;
             case BTN_TINY_PLANET:
                 element = findElementByXpathWithWait(driver, SECOND60, XPATH_TINY_PLANET);
+                break;
+            case BTN_CLONE_TRAIL:
+                element = findElementByXpathWithWait(driver, SECOND60, XPATH_CLONE_TRAIL);
                 break;
         }
         return element;

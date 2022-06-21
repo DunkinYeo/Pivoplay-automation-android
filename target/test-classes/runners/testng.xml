@@ -3,13 +3,13 @@
 
 <suite name="Pivo Play Test" verbose="1" >
    <test name="RegressionTest">
-       <parameter name="deviceName" value="3i-A4-2021-332"/>
-       <parameter name="udid" value="R3CR801099P"/>
+       <parameter name="deviceName" value="3i-A4-2021-78"/>
+       <parameter name="udid" value="R3CNC0KRH2K"/>
        <parameter name="platformVersion" value="11"/>
         <groups>
             <run>
                 <include name="abstract"/>
-                <include name="Regression"/>
+                <include name="Test"/>
             </run>
         </groups>
        <classes>
