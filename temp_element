@@ -1,0 +1,24 @@
+# Yes, I have Pivo! 
+# id 
+io.youvr.android.pivo:id/yes_got_pivo_btn
+
+# Got it
+# id 	
+io.youvr.android.pivo:id/got_it_btn
+
+# Onboarding 4 views
+
+# Got it
+#id
+io.youvr.android.pivo:id/got_it_btn
+
+# Onboarding 3 views
+
+# Got it
+# id
+io.youvr.android.pivo:id/got_it_btn
+
+# The new Pivo+ is here 
+# Skip
+# io.youvr.android.pivo:id/skip
+

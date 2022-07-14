@@ -3,9 +3,10 @@
 
 <suite name="Pivo Play Test" verbose="1" >
    <test name="RegressionTest">
-       <parameter name="deviceName" value="3i-A4-2021-78"/>
-       <parameter name="udid" value="R3CNC0KRH2K"/>
-       <parameter name="platformVersion" value="11"/>
+       <parameter name="deviceName" value="Test's S21"/>
+       <parameter name="udid" value="R3CR105ZNYL"/>
+       <parameter name="platformVersion" value="12"/>
+       <parameter name="noReset" value="false"/>
         <groups>
             <run>
                 <include name="abstract"/>

@@ -25,10 +25,10 @@ public abstract class BaseTest {
     }
 
     @BeforeMethod(groups = {"abstract"})
-    @Parameters({"deviceName", "platformVersion", "udid"})
-    public void setUp(String deviceName, String platformVersion, String udid) throws IOException {
-        System.out.println("BeforeTest...");
-        DesiredCapabilities caps = desiredCaps.getDesiredCapabilities(deviceName, platformVersion, udid);
+    @Parameters({"deviceName", "platformVersion", "udid", "noReset"})
+    public void setUp(String deviceName, String platformVersion, String udid, boolean noReset) throws IOException {
+        System.out.println("BeforeMethod...");
+        DesiredCapabilities caps = desiredCaps.getDesiredCapabilities(deviceName, platformVersion, udid, noReset);
 
         try {
             driver = new AndroidDriver<io.appium.java_client.android.AndroidElement>(getServiceUrl(), caps);
@@ -42,7 +42,7 @@ public abstract class BaseTest {
 
     @AfterMethod(groups = { "abstract" })
     public void tearDown() {
-        System.out.println("AfterTest...");
+        System.out.println("AfterMethod...");
         if (driver != null) {
             driver.quit();
         }
